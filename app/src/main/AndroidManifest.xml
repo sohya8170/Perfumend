@@ -1,9 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sopt.perfumend.perfumend">
+    package="com.sopt.perfumend.perfumend" >
 
-    <application android:allowBackup="true" android:label="@string/app_name"
-        android:icon="@drawable/ic_launcher" android:theme="@style/AppTheme">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sopt.perfumend.perfumend.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sopt.perfumend.perfumend.RecommendActivity"
+            android:label="@string/title_activity_recommend" >
+        </activity>
+        <activity
+            android:name="com.sopt.perfumend.perfumend.CategoryActivity"
+            android:label="@string/title_activity_category" >
+        </activity>
+        <activity
+            android:name="com.sopt.perfumend.perfumend.BestSellerActivity"
+            android:label="@string/title_activity_best_seller" >
+        </activity>
+        <activity
+            android:name="com.sopt.perfumend.perfumend.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.sopt.perfumend.perfumend.LogoActivity"
+            android:label="@string/title_activity_logo" >
+        </activity>
     </application>
 
 </manifest>
